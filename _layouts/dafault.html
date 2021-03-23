@@ -1,27 +1,18 @@
 <!doctype html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <link rel="alternate" type="application/atom+xml" title="kroy says {--}" href="/feed.xml">
 	<title>{{ page.title }} - {{ site.title | default: site.github.repository_name }}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
   </head>
   <body>
-    <div class="wrapper">
-
+    <div>
       <section>
-        <div id="title">
+        <div>
           <h1><a href="https://kkroy22.github.io/">{{ site.title | default: site.github.repository_name }}</a></h1>
           <p>{{ site.description | default: site.github.project_tagline }}</p>
           <hr>
         </div>
-
         {{ content }}
-
       </section>
-
     </div>
   </body>
 </html>
